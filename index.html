@@ -1,42 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>RaulSedano</title>
 </head>
+
 <body>
     <header>
-        <nav class="menu">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <img src="./assets/images/menu1.svg" alt="menu">
+        <nav class="nav">
+            <input type="checkbox" id="checkbtn">
+            <label for="checkbtn" class="nav__menu">
+                <img src="./assets/images/menu1.svg" class="nav__menu--image" alt="menu desplegable">
             </label>
-            <ul>
-                <li class="nav-enlace"><a href="#"></a></li>
-                <li class="nav-enlace"><a href="#">Inicio</a></li>
-                <li class="nav-enlace"><a href="#">Servicios</a></li>
-                <li class="nav-enlace"><a href="#">Acerca de mí</a></li>
-                <li class="nav-enlace"><a href="#">Mis habilidades</a></li>
-                <li class="nav-enlace"><a href="#">Mi portafolio</a></li>
-                <li class="nav-enlace"><a href="#">Contacto</a></li>
+            <ul class="nav__buttons">
+                <li class="nav__button"><a href="#">Inicio</a></li>
+                <li class="nav__button"><a href="#">Servicios</a></li>
+                <li class="nav__button"><a href="#">Acerca de mí</a></li>
+                <li class="nav__button"><a href="#">Mis habilidades</a></li>
+                <li class="nav__button"><a href="#">Mi portafolio</a></li>
+                <li class="nav__button"><a href="#">Contacto</a></li>
             </ul>
-           
-            <div class="container-header">
-                <div class="photo">
-                <img src="assets/images/raul.png" alt="image developer">
-                </div>
-                <div class="titulo"></div>
-                <div class="subTitulo"></div>
-                <div class="appsIcon"></div>
-            </div>
         </nav>
-        <section>
-
+        <section class="home" id="Inicio">
+            <div class="home__avatar">
+                <div class="home__avatar--box">
+                    <div class="title--1">
+                        <h1>Soy</h1>
+                        <span>Raul</span>
+                        <h2>Developer <br>Full Stack</h2>
+                    </div>
+                    <div class="title--2">
+                        <span>1 mes</span><br>
+                        <h2>Experiencia</h2>
+                        <div class="title--2__apps">
+                            <div class="title--2__app">
+                                <img src="./assets/images/cib_linkedin-in.svg" alt="linkedin imagen">
+                            </div>
+                            <div class="title--2__app">
+                                <img src="./assets/images/ant-design_instagram-filled.svg" alt="instagram imagen">
+                            </div>
+                            <div class="title--2__app">
+                                <img src="./assets/images/ant-design_twitter-outlined.svg" alt="twitter imagen">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/images/raul.png" class="home__avatar--image" alt="Raul imagen">
+                </div>
+            </div>
+            <div class="home__apps">
+                <div class="home__apps--container">
+                    <img src="./assets/images/akar-icons_google-fill.png" alt="google imagen" class="home__app">
+                    <img src="./assets/images/ant-design_amazon-outlined.png" alt="amazon imagen" class="home__app">
+                    <img src="./assets/images/bi_spotify.png" alt="spatify imagen" class="home__app">
+                </div>
+            </div>
         </section>
     </header>
-    
+    <section class="about--services">
+        <div class="about">
+            <h2>
+                Acerca de mí
+            </h2>
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni provident, quo quia ratione earum
+                aliquam dolorum? Illum, eaque! Tempore earum quod
+                veritatis iusto, repudiandae nam placeat est architecto voluptates consequuntur.
+                Cupiditate quasi soluta natus corporis, magni deleniti consequatur ratione quidem voluptatem,
+                asperiores, laudantium
+            </span>
+
+        </div>
+        <div class="services">
+            <h2>Servicios</h2>
+            <div class="scroll-horisontal">
+                <div class="container__card">
+                    <img src="./assets/images/iconoir_design-pencil.svg" alt="Desing">
+                    <h3>UX/UI Desing</h3>
+                    <span>Desde diseño hasta implemantacion del desarrollo</span>
+                </div>
+                <div class="container__card">
+                    <img src="./assets/images/majesticons_speakerphone-line.svg" alt="Marketing">
+                    <h3>Marketing</h3>
+                    <span>Desde diseño hasta implemantacion del desarrollo</span>
+                </div>
+                <div class="container__card">
+                    <img src="./assets/images/feather_search.svg" alt="Research">
+                    <h3>Research</h3>
+                    <span>Desde diseño hasta implemantacion del desarrollo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills--portfolio">
+        <div class="skills">
+        <h2 class="text-center">Mis habilidades</h2>
+        <div class="section section-habilidades">
+            <div class="habilidad">
+                <label for="js" class="text--skill">Javascript</label>
+                <label for="js" class="porcentaje--js">90%</label>
+                <progress id="js" value="90" max="100">90%</progress>
+            </div>
+            <div class="habilidad">
+                <label for="py" class="text--skill">Python</label>
+                <label for="py" class="porcentaje--py">80%</label>
+                <progress id="py" value="80" max="100">80%</progress>
+            </div>
+            <div class="habilidad">
+                <label for="html" class="text--skill">HTML</label>
+                <label for="html" class="porcentaje--html">70%</label>
+                <progress id="html" value="70" max="100">70%</progress>
+            </div>
+            <div class="habilidad">
+                <label for="css" class="text--skill">CSS</label>
+                <label for="css" class="porcentaje--css">60%</label>
+                <progress id="css" value="60" max="100">60%</progress>
+            </div>
+        </div>
+        </div>
+        <div class="portfolio">
+            <h2>Mi Portafolio</h2>
+            <div class="scroll-portfolio">
+
+                <div class="container--img">
+                    <img src="./assets/images/Group 47.jpg" alt="portfolio 1">
+                </div>
+                <div class="container--img">
+                    <img src="./assets/images/Rectangle 53.jpg" alt="portfolio 2">
+                </div>
+                <div class="container--img">
+                    <img src="./assets/images/Rectangle 65.jpg" alt="portfolio 3">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contacto</h2>
+        <div class="contact__phone">
+            <div class="contact__phone__container">
+                <div class="phone--card">
+                    <img src="./assets/images/phone 3.svg" alt="phono">
+                    <h3>Número celular</h3>
+                    <span>+51 925 440 063</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact__mail">
+            <div class="contact__mail__container">
+                <div class="mail--card">
+                    <img src="./assets/images/mail 3.svg" alt="mail">
+                    <h3>Correo</h3>
+                    <span>raulsedanomolina@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h3>Hecho con</h3>
+        <i class='bx bxs-heart'></i>
+        <h3>en Academlo</h3>
+
+    </footer>
 </body>
+
 </html>
